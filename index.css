@@ -105,7 +105,7 @@ body{
     width: 90%;
     display:flex;
     margin-left: 40px;
-    margin-top: 200px;
+  
   }
   
   .skill1{
@@ -157,7 +157,7 @@ margin: 20px;
 width: 90%;
 display:flex;
 margin-left: 40px;
-margin-top: 200px;
+/* margin-top: 200px; */
 }
 #portifolio1{
 width: 90%;
@@ -242,11 +242,18 @@ height: 350px;
     text-align:center;
     margin-bottom:80px;
   }
-  .skll h3{
+  #service{
     margin-left: 50px;
     text-align:center;
-    margin-bottom:80px;
+    margin-top:200px;
+   font-size:40px;
 
+  }
+  #port{
+    margin-left: 50px;
+    text-align:center;
+    margin-top:200px;
+   font-size:40px;
   }
   @media only screen and (max-width:800px) {
     /* For tablets: */
@@ -323,13 +330,24 @@ height: 350px;
       text-align: left;
     
     }
-
+    #service{
+      text-align:left;
+      margin-top:200px;
+     font-size:40px;
+  
+    }
+    #port{
+    
+      text-align:left;
+      margin-top:200px;
+     font-size:40px;
+    }
 
     .skills{
       width: 100%;
       display:block;
       margin-left: 40px;
-      margin-top: 200px;
+    
     }
     
     .skill1{
@@ -381,7 +399,7 @@ margin: 20px;
   width: 100%;
   display:block;
   margin-left: 40px;
-  margin-top: 200px;
+ 
  }
 #portifolio1{
 width: 80%;
@@ -536,6 +554,7 @@ height: 350px;
       width: 80%;
       margin-left: 10px;
       text-align: left;
+      
     
     }
 
