@@ -14,7 +14,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    background: rgb(88, 88, 88);
+    background: rgb(41, 40, 40);
 }
 
 .container {
@@ -26,8 +26,6 @@
     padding: 15px;
     border-radius: 15px;
     border: none;
-    box-shadow: 0 0 15px rgb(150, 149, 149);
-    /* background-color: gray; */
     background: rgb(19, 19, 19);
 }
 
@@ -47,6 +45,7 @@ input {
     outline: none;
     border-radius: 5px;
     border: none;
+    color: rgb(255, 255, 255);
     background: rgb(88, 88, 88);
 }
 
@@ -58,6 +57,7 @@ textarea {
     outline: none;
     border-radius: 5px;
     border: none;
+    color: rgb(255, 255, 255);
     background: rgb(88, 88, 88);
 }
 input[type=submit]{
@@ -68,7 +68,7 @@ input[type=submit]{
     cursor: pointer;
 }
 input[type=submit]:hover{
-background: tomato;
+background: rgb(81, 82, 81);
 }
 @media screen and (max-width:600px) {
     .container{
@@ -78,12 +78,12 @@ background: tomato;
 </style>
 <body>
     <div class="container">
-        <h2>Write Us</h2>
+        <h2>Create a new post</h2>
         <form action="">
             <input type="email" name="title" id="title" placeholder="Title of the post">
             <input type="file" name="image" id="image" placeholder=" Upload Files">
             <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter your body here"></textarea>
-            <input type="submit" value="Send">
+            <input type="submit" value="Post">
         </form>
     </div>
 </body>
