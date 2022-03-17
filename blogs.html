@@ -23,17 +23,17 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#0051ff, #007bff);
+  background: linear-gradient(#0c0c0c, #272727);
 }
 ::selection{
-  color: #fff;
-  background: #4267B2;
+  color: #4d4d4d;
+  background: #40CB99;
 }
 .container{
   width: 500px;
   height: 480px;
   overflow: hidden;
-  background: #fff;
+  background: rgb(66, 66, 66);
   border-radius: 10px;
   transition: height 0.2s ease;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
@@ -44,10 +44,11 @@ body{
 .container .wrapper{
   width: 1000px;
   display: flex;
+  background: rgb(39, 39, 39);
 }
 .container .wrapper section{
   width: 500px;
-  background: #fff;
+  background: rgb(68, 68, 68);
 }
 .container img{
   cursor: pointer;
@@ -63,7 +64,7 @@ body{
   font-weight: 600;
   padding: 17px 0;
   text-align: center;
-  border-bottom: 1px solid #bfbfbf;
+  border-bottom: 1px solid #4d4d4d;
 }
 .post form{
   margin: 20px 25px;
@@ -94,7 +95,7 @@ form .content .details p{
   border-radius: 5px;
   align-items: center;
   max-width: 98px;
-  background: #E4E6EB;
+  background: #646464;
   justify-content: space-between;
 }
 .details .privacy span{
@@ -118,10 +119,10 @@ form textarea{
   min-height: 100px;
 }
 form textarea::placeholder{
-  color: #858585;
+  color: #4d4d4d;
 }
 form textarea:focus::placeholder{
-  color: #b3b3b3;
+  color: #4d4d4d;
 }
 form :where(.theme-emoji, .options){
   display: flex;
@@ -136,7 +137,7 @@ form .options{
   margin: 15px 0;
   padding: 0 15px;
   border-radius: 7px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #4d4d4d;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 form .options :where(.list, li),
@@ -162,7 +163,7 @@ form .options .list{
   border-radius: 50%;
 }
 .options .list li:hover{
-  background: #f0f1f4;
+  background: #4d4d4d;
 }
 .options .list li img{
   width: 23px;
@@ -176,16 +177,16 @@ form button{
   color: #BCC0C4;
   cursor: no-drop;
   border-radius: 7px;
-  background: #e2e5e9;
+  background: #606061;
   transition: all 0.3s ease;
 }
 form textarea:valid ~ button{
-  color: #fff;
+  color: 4d4d4d;
   cursor: pointer;
-  background: #4267B2;
+  background: #40CB99;
 }
 form textarea:valid ~ button:hover{
-  background: #4267B2;
+  background: #40CB99;
 }
 .container .audience{
   opacity: 0;
@@ -198,7 +199,7 @@ form textarea:valid ~ button:hover{
   padding: 17px 0;
   text-align: center;
   position: relative;
-  border-bottom: 1px solid #bfbfbf;
+  border-bottom: 1px solid #4d4d4d;
 }
 .audience header .arrow-back{
   position: absolute;
@@ -209,7 +210,7 @@ form textarea:valid ~ button:hover{
   font-size: 15px;
   color: #747474;
   border-radius: 50%;
-  background: #E4E6EB;
+  background: #4d4d4d;
 }
 .audience header p{
   font-size: 22px;
@@ -241,10 +242,10 @@ form textarea:valid ~ button:hover{
 }
 .list li.active,
 .audience .list li.active:hover{
-  background: #E5F1FF;
+  background: #4d4d4d;
 }
 .audience .list li:hover{
-  background: #f0f1f4;
+  background: #4d4d4d;
 }
 .audience .list li .column .icon{
   height: 50px;
@@ -252,10 +253,10 @@ form textarea:valid ~ button:hover{
   color: #333;
   font-size: 23px;
   border-radius: 50%;
-  background: #E4E6EB;
+  background: #4d4d4d;
 }
 .audience .list li.active .column .icon{
-  background: #cce4ff;
+  background: #4d4d4d;
 }
 .audience .list li .column .details{
   margin-left: 15px;
@@ -275,7 +276,7 @@ form textarea:valid ~ button:hover{
   border: 1px solid #707070;
 }
 .list li.active .radio{
-  border: 2px solid #4267B2;
+  border: 2px solid #40CB99;
 }
 .list li .radio::before{
   content: "";
@@ -284,7 +285,7 @@ form textarea:valid ~ button:hover{
   border-radius: inherit;
 }
 .list li.active .radio::before{
-  background: #4267B2;
+  background: #40CB99;
 }
   </style>
   <body>
@@ -305,19 +306,10 @@ form textarea:valid ~ button:hover{
               </div>
             </div>
             <textarea placeholder="What's on your mind, CodeWithNepal?" spellcheck="false" required></textarea>
-            <div class="theme-emoji">
-              <img src="icons/theme.svg" alt="theme">
-              <img src="icons/smile.svg" alt="smile">
-            </div>
+          
             <div class="options">
               <p>Add to Your Post</p>
-              <ul class="list">
-                <li><img src="icons/gallery.svg" alt="gallery"></li>
-                <li><img src="icons/tag.svg" alt="gallery"></li>
-                <li><img src="icons/emoji.svg" alt="gallery"></li>
-                <li><img src="icons/mic.svg" alt="gallery"></li>
-                <li><img src="icons/more.svg" alt="gallery"></li>
-              </ul>
+              
             </div>
             <button>Post</button>
           </form>
