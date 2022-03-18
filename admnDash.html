@@ -357,6 +357,12 @@ nav .profile-details i{
   font-weight: 400;
   color: #333;
 }
+button{
+    background-color: #40CB99;
+    color: white;
+    height: 50px;
+    width: 100%;
+  } 
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar{
@@ -424,7 +430,7 @@ nav .profile-details i{
   .sidebar.active ~ .home-section nav .profile-details{
     display: none;
   }
-}
+} 
 
    </style>
 <body>
@@ -437,69 +443,29 @@ nav .profile-details i{
         <li>
           <a href="#" class="active">
             <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Dashboard</span>
+            <span class="links_name">Home</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-box' ></i>
-            <span class="links_name">Product</span>
+            <span class="links_name">Comments</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Order list</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-pie-chart-alt-2' ></i>
-            <span class="links_name">Analytics</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-coin-stack' ></i>
-            <span class="links_name">Stock</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-book-alt' ></i>
-            <span class="links_name">Total order</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-message' ></i>
-            <span class="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Setting</span>
-          </a>
-        </li>
+      
+       
         <li class="log_out">
           <a href="#">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
         </li>
+        <li>
+            <a href="#">
+              <i class='' ></i>
+              <span class="links_name"><button>Create blog</button></span>
+            </a>
+          </li>
       </ul>
   </div>
   <section class="home-section">
@@ -686,7 +652,7 @@ nav .profile-details i{
     </div>
   </section>
 
-  <script>
+  <!-- <script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function() {
@@ -696,7 +662,7 @@ sidebarBtn.onclick = function() {
 }else
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
- </script>
+ </script> -->
 
 </body>
 </html>
