@@ -11,7 +11,37 @@
     <link rel="stylesheet" href="index.css" >
     <title>Document</title>
     <style>
-      
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+        
+        input {
+            width: 50%;
+            margin: 5px 0;
+            height: 35px;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            color: rgb(255, 255, 255);
+            background: rgb(88, 88, 88);
+        }
+        
+        textarea {
+            width: 100%;
+            margin: 5px 0;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            color: rgb(255, 255, 255);
+            background: rgb(88, 88, 88);
+        }
     </style>
 </head>
 <body>
@@ -29,18 +59,20 @@
         </ul>
 </div>
 </div>         
-  
+  <div>
+      <form><input type="text" name="search" id="search" placeholder="Type here to search"></form>  </div>
 
 
   <div class="port">
     <h3 id="port">My blogs</h3>
     <div class="Portifolio">
         <div class="Portifolio1"><img src="./images/1.png" id="portifolio1">
-            <h3>Blog 1</h3>
-            <
+            <span>Blog 1</span>
     </div>
-      <div class="Portifolio2"><img src="./images/2.png"  id="portifolio2"></div>
-      <div class="Portifolio3"><img src="./images/3.png"  id="portifolio3"></div>
+      <div class="Portifolio2"><img src="./images/2.png"  id="portifolio2">
+        <span>Blog 1</span></div>
+      <div class="Portifolio3"><img src="./images/3.png"  id="portifolio3">
+        <span>Blog 1</span></div>
     </div>
   </div>
 
