@@ -60,14 +60,14 @@ textarea {
     color: rgb(255, 255, 255);
     background: rgb(88, 88, 88);
 }
-input[type=submit]{
+button{
     margin: 10px auto;
     width: 120px;
     background: #40CB99;
     color: white;
     cursor: pointer;
 }
-input[type=submit]:hover{
+button:hover{
 background: rgb(81, 82, 81);
 }
 @media screen and (max-width:600px) {
@@ -83,7 +83,8 @@ background: rgb(81, 82, 81);
             <input type="email" name="title" id="title" placeholder="Title of the post">
             <input type="file" name="image" id="image" placeholder=" Upload Files">
             <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter your body here"></textarea>
-            <input type="submit" value="Create">
+            <a href="./dashboard.html"> <button> Create</button></a>
+          
         </form>
     </div>
 </body>
