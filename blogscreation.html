@@ -5,77 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
-
+    <title>blogs form</title>
+    <link rel="stylesheet" href="./blogsCreation.css">
 </head>
-<style>
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    background: rgb(41, 40, 40);
-}
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin: 15vh auto;
-    padding: 15px;
-    border-radius: 15px;
-    border: none;
-    background: rgb(19, 19, 19);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}
-
-input {
-    width: 100%;
-    margin: 5px 0;
-    height: 35px;
-    font-size: 17px;
-    text-align: center;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    color: rgb(255, 255, 255);
-    background: rgb(88, 88, 88);
-}
-
-textarea {
-    width: 100%;
-    margin: 5px 0;
-    font-size: 17px;
-    text-align: center;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    color: rgb(255, 255, 255);
-    background: rgb(88, 88, 88);
-}
-button{
-    margin: 10px auto;
-    width: 120px;
-    background: #40CB99;
-    color: white;
-    cursor: pointer;
-}
-button:hover{
-background: rgb(81, 82, 81);
-}
-@media screen and (max-width:600px) {
-    .container{
-        width: 90%;
-    }
-}
-</style>
 <body>
     <div class="container">
         <h2>Create a new post</h2>
@@ -83,7 +16,7 @@ background: rgb(81, 82, 81);
             <input type="email" name="title" id="title" placeholder="Title of the post">
             <input type="file" name="image" id="image" placeholder=" Upload Files">
             <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter your body here"></textarea>
-            <a href="./dashboard.html"> <button> Create</button></a>
+            <button> <a href="./dashboard.html"> Create</a></button>
           
         </form>
     </div>
